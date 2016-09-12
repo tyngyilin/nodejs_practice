@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <form name='userlogin' action='/userlogin' method='post'>
+      username: <input type="text" name="username" />
+      password:<input type="password" name="password" />
+      <input type="submit" value="Submit" />
+      <p>請用代理端 會員測試帳號 登入 ex: tyngyilin_member qwe123</p>
+    </form>
+    <h2>{{ message }}</h2>
+  </body>
+</html>

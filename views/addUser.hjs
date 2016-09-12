@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <form name='adduser' action='/adduser' method='post'>
+      username: <input type="text" name="username" />
+      email:<input type="email" name="email" />
+      <input type="submit" value="Submit" />
+      <a href="userList">back</a>
+    </form>
+  </body>
+</html>

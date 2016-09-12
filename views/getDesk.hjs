@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User List</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <style>
+    table {
+      width:100%;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+    }
+    table#t01 tr:nth-child(even) {
+      background-color: #eee;
+    }
+    table#t01 tr:nth-child(odd) {
+      background-color:#fff;
+    }
+    table#t01 th {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <h1>Desk List</h1>
+    <table id="t01">
+      <tr>
+        <th>name</th><th>descript</th><th>detail</th>
+      </tr>
+      {{#deskList}}
+      <tr>
+        <td>{{zhcn_name}}</td>
+        <td>{{zhcn_desc}}</td>
+        <td><a href="getDeskDetail/{{sn}}" >edit</a></td>
+      </tr>
+      {{/deskList}}
+    </table>
+    <a href="userList">返回</a>
+  </body>
+</html>

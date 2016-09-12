@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <form name='modifyuser' action='/modifyUser' method='post'>
+      {{#userDetail}}
+      <input name="id" type="hidden" value="{{_id}}" />
+      username: <input type="text" name="username" value="{{username}}"/>
+      email:<input type="email" name="email" value="{{email}}"/>
+      {{/userDetail}}
+      <input type="submit" value="Submit" />
+      <a href="userList">back</a>
+    </form>
+  </body>
+</html>
